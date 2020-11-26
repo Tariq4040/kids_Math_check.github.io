@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quize For Students</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1 align="center">Are You Ready For Math Quize</h1>
+	<section>
+		<div>
+			<input type="text" id="txtid1" style="width:150px;height: 50px;">
+			<span style="font-size: 40px;">+</span>
+			<input type="text" id="txtid2" style="width:150px;height: 50px;"><br>
+			<input type="text" id="txtid3" style="width:200px;height: 50px; margin-left: 73px;"><br>
+			<button class="btn btn-success ml-5" onclick="myfun()">Check Your Answer</button>
+			</div>
+	</section>
+
+
+	<script>
+		
+		
+		 const val1=Math.floor(Math.random()*10+1);
+		 const val2=Math.floor(Math.random()*10+1)
+   		 document.getElementById('txtid1').value=val1;
+		 document.getElementById('txtid2').value=val2;
+		 const sum=val1 + val2;
+		function  myfun()
+		{
+			const val3=document.getElementById('txtid3').value;
+			if (val3==sum) {
+			alert('Answer Is Correct');
+		}
+		else
+		{
+			alert('Correct Answer is '+ sum + ' ,Try Again');
+		}
+
+		 val3=document.getElementById('txtid3').value="";
+		 /*
+		 val1=Math.floor(Math.random()*10+1);
+		 val2=Math.floor(Math.random()*10+1);
+
+   		 document.getElementById('txtid1').value=val1;
+		 document.getElementById('txtid2').value=val2;
+		 sum=val1 + val2;
+		 */
+		}
+		
+
+	</script>
+</body>
+</html>

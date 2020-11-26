@@ -1,0 +1,53 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body
+{
+	background-color: orange;
+}
+h1
+{
+	animation: animate 2s linear infinite;
+	animation-direction: alternate; 
+}
+@keyframes animate
+{from{transform: translateX(-20px);} 
+ to{transform: translateX(20px);}
+}
+section
+{
+	height: 400px;
+	width: 500px;
+	padding: 20px;
+	border: 1px solid red;
+	background-color: grey;
+	box-shadow: 10px 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30%;
+	
+	
+}
+section div
+{
+	margin-top: 8%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+div input
+{
+	
+	padding: 30px;
+	margin: 7% 2% 4%;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 25px;
+}
+
+button
+{
+	border-radius: 0
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Game</title>
+
+</head>
+<body>
+		<div>
+			<input type="text" id="id1">
+			<span> + </span>
+			<input type="text" id="id2">
+			<br>
+			<input type="text" id="id3"><br>
+			<input type="submit" id="btn" value="Click Me"
+					 onclick="myfun()">
+		</div>
+
+		<script>
+			
+			const val1=Math.floor(Math.random()*10+1);
+			const val2=Math.floor(Math.random()*10+1);
+
+			document.getElementById('id1').value=val1;
+			document.getElementById('id2').value=val2;
+			const sum=val1+val2;
+
+			
+
+			function myfun() {
+				const val3=document.getElementById('id3').value;
+				if (val3==sum) {
+
+					alert('Answer Is Correct');
+				} else {
+					alert('Answer Is ' +sum+ '. Try Again');
+				}
+				val3=document.getElementById('id3').value="";
+
+				 val1=Math.floor(Math.random()*10+1);
+			 val2=Math.floor(Math.random()*10+1);
+
+			document.getElementById('id1').value=val1;
+			document.getElementById('id2').value=val2;
+			 //sum=val1+val2;
+			}
+		</script>
+</body>
+</html>
